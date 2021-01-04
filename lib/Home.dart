@@ -6,6 +6,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  int _indiceAtual = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,6 +46,12 @@ class _HomeState extends State<Home> {
 
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _indiceAtual,
+        onTap: (indice){
+          setState(() {
+            _indiceAtual = indice;
+          });
+        },
         type: BottomNavigationBarType.shifting,
         fixedColor: Colors.red,
           items: [
