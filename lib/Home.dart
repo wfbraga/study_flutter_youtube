@@ -43,19 +43,28 @@ class _HomeState extends State<Home> {
 
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
         fixedColor: Colors.red,
           items: [
             BottomNavigationBarItem(
+              backgroundColor: Colors.orange,
                 title: Text("Inicio"),
-                icon: Icon(Icons.home)
+                icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
+                backgroundColor: Colors.green,
                 title: Text("Em Alta"),
                 icon: Icon(Icons.whatshot)
             ),
             BottomNavigationBarItem(
-                title: Text("Inicio"),
-                icon: Icon(Icons.home)
+                backgroundColor: Colors.blue,
+                title: Text("Inscricoes"),
+                icon: Icon(Icons.subscriptions)
+            ),
+            BottomNavigationBarItem(
+                backgroundColor: Colors.yellow,
+                title: Text("Biblioteca"),
+                icon: Icon(Icons.library_add)
             ),
           ]),
     );
