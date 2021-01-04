@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_youtub_app/telas/Biblioteca.dart';
+import 'package:flutter_youtub_app/telas/EmAlta.dart';
+import 'package:flutter_youtub_app/telas/Inicio.dart';
+import 'package:flutter_youtub_app/telas/Inscricao.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,10 +17,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     List<Widget> telas = [
-      Text("Inicio"),
-      Text("Em Alta"),
-      Text("Incricoes"),
-      Text("Biblioteca")
+      Inicio(),
+      EmAlta(),
+      Biblioteca(),
+      Inscricao()
     ];
 
     return Scaffold(
