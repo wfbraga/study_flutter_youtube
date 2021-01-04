@@ -52,26 +52,26 @@ class _HomeState extends State<Home> {
             _indiceAtual = indice;
           });
         },
-        type: BottomNavigationBarType.shifting,
+        type: BottomNavigationBarType.fixed,
         fixedColor: Colors.red,
           items: [
             BottomNavigationBarItem(
-              backgroundColor: Colors.orange,
+              //backgroundColor: Colors.orange,
                 title: Text("Inicio"),
                 icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
-                backgroundColor: Colors.green,
+                //backgroundColor: Colors.green,
                 title: Text("Em Alta"),
                 icon: Icon(Icons.whatshot)
             ),
             BottomNavigationBarItem(
-                backgroundColor: Colors.blue,
+                //backgroundColor: Colors.blue,
                 title: Text("Inscricoes"),
                 icon: Icon(Icons.subscriptions)
             ),
             BottomNavigationBarItem(
-                backgroundColor: Colors.yellow,
+                //backgroundColor: Colors.yellow,
                 title: Text("Biblioteca"),
                 icon: Icon(Icons.library_add)
             ),
