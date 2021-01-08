@@ -3,6 +3,11 @@ import 'package:flutter_youtub_app/Api.dart';
 import 'package:flutter_youtub_app/model/Video.dart';
 
 class Inicio extends StatefulWidget {
+
+  String pesquisa;
+
+  Inicio(this.pesquisa);
+
   @override
   _InicioState createState() => _InicioState();
 }
@@ -11,13 +16,13 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
 
-    _listarVideos(){
+    _listarVideos(String pesquisa){
       Api api = Api();
-      return api.pesquisar("flutter");
+      return api.pesquisar(pesquisa);
     }
 
     return FutureBuilder< List < Video > >(
-      future: _listarVideos(),
+      future: _listarVideos(widget.pesquisa),
       builder: (contex, snapshot){
         switch( snapshot.connectionState ){
           case ConnectionState.none:

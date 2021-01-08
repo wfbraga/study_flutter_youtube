@@ -3,6 +3,7 @@ import 'package:flutter_youtub_app/Home.dart';
 
 void main() => runApp(MaterialApp(
   home: Home(),
+  debugShowCheckedModeBanner: false,
 ));
 
 

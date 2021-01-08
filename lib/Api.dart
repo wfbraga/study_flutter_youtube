@@ -12,7 +12,7 @@ class Api {
     http.Response response = await http.get(
       URL_BASE + "/search"
           "?part=snippet"
-          "&channelId=$ID_CANAL"
+          //"&channelId=$ID_CANAL"
           "&type=video"
           "&maxResults=20"
           "&order=date"
