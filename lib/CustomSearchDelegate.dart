@@ -33,6 +33,7 @@ class CustomSearchDelegate extends SearchDelegate<String>{
   @override
   Widget buildSuggestions(BuildContext context) {
     //print("Resultado: digitado " + query);
+    /*
     List<String> lista = List();
 
     if(query.isNotEmpty){
@@ -58,5 +59,7 @@ class CustomSearchDelegate extends SearchDelegate<String>{
         child: Text("Nenhum resultado"),
       );
     }
+    */
+    return Container();
   }
 }
